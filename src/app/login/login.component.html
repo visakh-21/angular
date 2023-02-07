@@ -1,0 +1,32 @@
+
+
+
+<h2 class="ms-2 p-2 mt-5 text-white"> {{data}}</h2>
+<div class="container w-50 border border-white text-center p-5 mt-5" style="background-color: rgb(167, 101, 253);">
+    <h1> sign in to your bank account</h1>
+    <form action="" (ngSubmit)="login()">
+
+        <div class="p-3 mt-2">
+
+            <input [(ngModel)]="accno" id="txt1" name="n1" class="form-control" type="text" [placeholder]="inputplaceholder">
+        </div>
+
+        <div class="p-3 mt-2">
+
+            <input [(ngModel)]="psw" id="txt2" name="n2" class="form-control" type="text" placeholder="password">
+        </div>
+
+        
+        <div class="p-3 mt-2">
+
+            <button type="submit"  class="btn btn-outline-light">login</button>
+        </div>
+
+        <div class="text-center">
+            <strong> not registered</strong>
+            <a style="color: red;" routerLink="register"> register?</a>
+        </div>
+    </form>
+
+
+</div>

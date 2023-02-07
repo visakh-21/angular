@@ -1,0 +1,36 @@
+
+
+
+<h2 class="ms-2 p-2 mt-5 text-white"> </h2>
+<div class="container w-50 border border-white text-center p-5 mt-5" style="background-color: rgb(35, 6, 141);">
+    <h1 style="color: white;"> sign in to your bank account</h1>
+    <form [formGroup]="registerForm" action="">
+
+        <div class="p-3 mt-2">
+
+            <input formControlName="uname"  id="a1" name="a2" class="form-control" type="text" placeholder="username">
+        </div>
+
+        <div class="p-3 mt-2">
+
+            <input formControlName="psw"  id="b1" name="b2" class="form-control" type="text" placeholder="password">
+        </div>
+
+        <div class="p-3 mt-2">
+
+            <input formControlName="acno"  id="a1" name="a2" class="form-control" type="text" placeholder="username">
+        </div>
+        
+        <div class="p-3 mt-2">
+
+            <button type="button" (click)="register()"  class="btn btn-outline-light">sign up</button>
+        </div>
+
+        <!-- <div class="text-center">
+            <strong> not registered</strong>
+            <a style="color: red;" routerLink="register"> register?</a>
+        </div> -->
+    </form>
+
+
+</div>

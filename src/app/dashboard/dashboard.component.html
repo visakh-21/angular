@@ -1,0 +1,74 @@
+
+<h1> welcome {{user}}</h1>
+
+
+<div class=" mt-3 p-2 w-25 container text-center  border border dark rounded-pill"style="" >
+    <a style="text-decoration: none ; color:yellow" href="view transaction history"></a>
+
+</div>
+    <div class="container row mb-5 p-5">
+        <div class="text-center container col-lg-6 col-md-12">
+            <div class="container w-75 rounded text-center p-5 mt-2">
+            <h1>deposit</h1>
+
+    <form action="">
+
+        <div class="p-3 mt-2">
+
+            <input [(ngModel)]="acno" id="frm1" name="f1" class="form-control" type="text" placeholder="account ">
+        </div>
+
+        <div class="p-3 mt-2">
+
+            <input [(ngModel)]="psw" id="frm2" name="f2" class="form-control" type="text" placeholder="password">
+        </div>
+        <div class="p-3 mt-2">
+
+            <input [(ngModel)]="amnt"   id="frm3" name="f3" class="form-control" type="text" placeholder="amount">
+        </div>
+        
+        <div class="p-3 mt-2">
+
+            <button type="button" (click)="deposit()" class="btn btn-outline-light"> deposit</button>
+        </div>
+        </form>
+    </div>
+</div>
+</div>
+
+<div class="container row mb-5 p-5">
+    <div class="text-center container col-lg-6 col-md-12">
+        <div class="container w-75 rounded text-center p-5 mt-2">
+        <h1>withdraw</h1>
+
+<form action="">
+    
+
+    
+            <div class="p-3 mt-2">
+    
+                <input [(ngModel)]="acno1"   id="frm3" name="f4" class="form-control" type="text" placeholder="account n">
+            </div>
+    
+            <div class="p-3 mt-2">
+    
+                <input [(ngModel)]="psw1"  id="frm4" name="f5" class="form-control" type="text" placeholder="password">
+            </div>
+            <div class="p-3 mt-2">
+    
+                <input [(ngModel)]="amnt1"  id="frm5" name="f6" class="form-control" type="text" placeholder="amount">
+            </div>
+            
+            <div class="p-3 mt-2">
+    
+                <button type="button" (click)="withdraw()" class="btn btn-outline-light"> withdraw</button>
+            </div>
+            
+    
+            </form>
+            </div>
+            </div>
+            </div>
+
+
+

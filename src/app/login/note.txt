@@ -1,0 +1,69 @@
+constructor---->ngonitint--->other methods
+
+
+Data binding techniques in angular
+---------------------------
+
+1.one way binding
+-----------------
+1.1 component to view data sharing
+    1.1.1..string interpollation {{}}
+    1.2.2..property binding [property]="data"
+
+ 2.view to component data sharing
+     1.2.1  event binding (event)="method()"
+     1.2.2 event binding using $event (event)=method($event) 
+     1.2.3  evennt binding with template rendering variable #variable
+
+2.two way binding...
+....................
+
+2.1 ngModel   [(ngModel)]="property"..FormsModule
+
+
+Redirection in angular
+.............................
+Module-AppRoutingModule
+Router- a class used to redirect
+methods-navigateByUrl
+
+Dependency injection
+......................
+
+to  share datas from one class to another class
+           
+           inside constructor
+
+           --access_specifier reference:ClassName
+             private/public
+
+             reference.method()
+
+
+                   angular services
+             ..............................
+             to store data and methods
+             ....all the components can acess the data  and methods defined in service life easily
+                    ng g s service_name
+
+
+
+angular directives
+..........................
+1.component directives
+2.structural directives   *ngfor
+
+form creation angular
+.........................
+
+form creation in angular
+     1.template driven form
+     2.model driven form
+          2.1.reactive form-used to create model of a form
+
+          (includes group,array,control)
+                 -ReactiveFormsModule(using module to create)
+                 -FormBuilder--class used to create model form
+                 -group()-method to create model
+
+
